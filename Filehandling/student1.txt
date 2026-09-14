@@ -1,0 +1,12 @@
+Name :- shalu
+Course :- PHP
+
+Name :- abhishek
+Course :- CO
+
+Name :- yash
+Course :- Java
+
+Name :- komal
+Course :- mern
+
