@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Form</title>
+    <title>Employee Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="form-box">
-    <h2>Teacher Registration</h2>
+    <h2>Employee Registration</h2>
 
-    <form action="" method="post">
+    <form action="submit3.php" method="post" enctype="multipart/form-data">
 
-        <label>Teacher Name</label>
-        <input type="text" name="teacher_name" placeholder="Enter teacher name">
+        <label>Employee Name</label>
+        <input type="text" name="name" placeholder="Enter employee name">
 
         <label>Email</label>
         <input type="email" name="email" placeholder="Enter email">
@@ -28,23 +28,23 @@
             <label><input type="radio" name="gender" value="Female"> Female</label>
         </div>
 
-        <label>Subject</label>
-        <select name="subject">
-            <option value="">Select Subject</option>
-            <option value="PHP">PHP</option>
-            <option value="Java">Java</option>
-            <option value="Python">Python</option>
-            <option value="Web Development">Web Development</option>
+        <label>Department</label>
+        <select name="department">
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Sales">Sales</option>
+            <option value="Marketing">Marketing</option>
         </select>
-
-        <label>Experience</label>
-        <input type="number" name="experience" placeholder="Enter experience in years">
 
         <label>City</label>
         <input type="text" name="city" placeholder="Enter city">
 
         <label>Address</label>
         <textarea name="address" placeholder="Enter address"></textarea>
+
+        <label>Profile Image</label>
+        <input type="file" name="file">
 
         <button type="submit">Submit</button>
 

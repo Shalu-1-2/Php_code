@@ -11,10 +11,10 @@
 <div class="form-box">
     <h2>Customer Registration</h2>
 
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="submit4.php" method="post" enctype="multipart/form-data">
 
         <label>Customer Name</label>
-        <input type="text" name="customer_name" placeholder="Enter customer name">
+        <input type="text" name="name" placeholder="Enter customer name">
 
         <label>Email</label>
         <input type="email" name="email" placeholder="Enter email">
@@ -44,7 +44,7 @@
         <textarea name="address" placeholder="Enter address"></textarea>
 
         <label>Profile Image</label>
-        <input type="file" name="profile_image">
+        <input type="file" name="file">
 
         <button type="submit">Submit</button>
 
