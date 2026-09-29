@@ -1,0 +1,31 @@
+<?php
+
+if(! isset($_POST['update'])){
+
+header('location:form1show.php');
+exit();
+
+}
+ $id =$_POST['id'];
+ $name =$_POST['name'];
+ $email =$_POST['email'];
+ $mobile =$_POST['mobile'];
+ $dob =$_POST['dob'];
+
+ $conn = mysqli_connect("localhost","root","","phpcrud");
+
+ if(! $conn){
+    echo "database connection failed".mysqli_connect_error();
+ }
+
+ $up ="UPDATE form1 SET name= '$name',email='email',mobile='$mobile',dob ='$dob' WHERE  id='$id'";
+
+ $query =mysqli_query($conn,$up);
+
+ if($query){
+    echo "data update Successfully !";
+ }
+ else{
+    echo "data not update".mysqli_error($conn);
+ }
+?>
